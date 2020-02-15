@@ -1,7 +1,9 @@
 #include "Point.h"
-#include "window.h"
+#include "Board.h"
+#include <iostream>
 
 
+using namespace std;
 
 Point::Point()
 {
@@ -13,7 +15,7 @@ Point::Point(int x, int y)
     this->m_y = y;
 }
 
-Point::setPoint(int x, int y)
+void Point::setPoint(int x, int y)
 {
     this->m_x = x;
     this->m_y = y;
@@ -21,58 +23,60 @@ Point::setPoint(int x, int y)
 
 void Point::moveDown()
 {
-    y--;
+    m_y--;
 }
 
 void Point::moveUp()
 {
-    y++;
+    m_y++;
 }
 
 void Point::moveRight()
 {
-    x++;
+    m_x++;
 }
 void Point::moveLeft()
 {
-    x--;
+    m_x--;
 }
 
-
-int GetX()
+int Point::getX() const
 {
     return m_x;
 }
 
-void SetX(int val)
+
+void Point::setX(int val)
 {
     m_x = val;
 }
 
-int GetY()
+int Point::getY() const
 {
     return m_y;
 }
 
-void SetY(int val)
+void Point::setY(int val)
 {
     m_y = val;
 }
 
 
-void drawPoint()
+void Point::drawPoint()
 {
-    gotoxy(this->m_x, this->m_y);
-    cout << "*";
+    Board *b;
+    b = Board::getInstance();
+    b->dessinerPoint(*this);
 }
 
-void erasePoint()
+void Point::erasePoint()
 {
-    gotoxy(this->m_x, this->m_y);
-    cout << " ";// l'étoile est remplacée par un espace
+    Board *b;
+    b = Board::getInstance();
+    b->effacerPoint(*this);
 }
 
-void debug()
+void Point::debug()
 {
     cout << "(" << this->m_x << "," << this->m_y << ")";
 }

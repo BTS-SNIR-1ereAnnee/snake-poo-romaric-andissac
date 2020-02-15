@@ -1,7 +1,8 @@
 #ifndef POINT_H
 #define POINT_H
 
-
+#include "Board.h"
+class Board;
 class Point
 {
 public:
@@ -12,6 +13,8 @@ public:
 
     /** Default destructor */
     virtual ~Point();
+
+    void setPoint(int x, int y);
     /**
         Move point up
     */
@@ -32,19 +35,19 @@ public:
     /** Access m_x
      * \return The current value of m_x
      */
-    int GetX();
+    int getX() const;
     /** Set m_x
      * \param val New value to set
      */
-    void SetX(int val);
+    void setX(int val);
     /** Access m_y
      * \return The current value of m_y
      */
-    int GetY();
+    int getY() const;
     /** Set m_y
      * \param val New value to set
      */
-    void SetY(int val);
+    void setY(int val);
 
     /**
     *   dessine le point

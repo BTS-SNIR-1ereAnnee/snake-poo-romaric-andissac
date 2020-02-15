@@ -3,14 +3,26 @@
  Auteur: Sylvain Guilbert
 */
 #include <iostream>
-#include <conio.h>
-#include <Point.h>
+#include "classes/Point.h"
+#include "classes/Board.h"
+
 
 using namespace std;
 
 int main()
 {
-    Point p(20,4);
-    p.debug();
+
+    // pointeurs sur l'unique instance de la classe UniqueObject
+    Board *fenetre;
+    // initialisation des pointeurs
+    fenetre = Board::getInstance ();
+
+    Point p(10,4);
+    p.drawPoint();
+    Point p2(10,5);
+    p2.drawPoint();
+    //cout << "press any key to quit" << endl;
+    getchar();
+    fenetre->kill();
     return 0;
 }
