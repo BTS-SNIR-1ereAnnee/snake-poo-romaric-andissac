@@ -3,8 +3,8 @@
  Auteur: Sylvain Guilbert
 */
 #include <iostream>
-#include "classes/Point.h"
-#include "classes/Board.h"
+#include "Point.h"
+#include "Board.h"
 
 
 using namespace std;
