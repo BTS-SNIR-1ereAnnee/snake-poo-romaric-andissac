@@ -9,8 +9,22 @@ using namespace std;
 
 Snake::Snake()
 {
-this-> 
+
 
 }
 
 void Snake::afficher()
+{
+   
+
+}
+
+void Snake::ajouterPoint(Point p)
+{
+
+    for(int i=0;i<serpent[20]; i++)
+    {
+    serpent[i+1];
+    }
+
+}
