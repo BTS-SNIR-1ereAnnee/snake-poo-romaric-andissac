@@ -28,7 +28,7 @@ public:
     */
     void moveLeft();
     /**
-        Move point up
+        Move point right
     */
     void moveRight();
 
