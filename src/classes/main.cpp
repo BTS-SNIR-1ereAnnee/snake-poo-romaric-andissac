@@ -22,8 +22,19 @@ int main()
     p.drawPoint();
     Point p2(10,5);
     p2.drawPoint();
-    p2.setX(8);
-    p2.setY(2);
+    p2.setX(6);
+    p2.drawPoint();
+    p2.setY(7);
+    p2.drawPoint();
+    p2.moveUp();
+    p2.drawPoint();
+    p2.moveDown();
+    p2.drawPoint();
+    p2.moveRight();
+    p2.drawPoint();
+    p2.moveLeft();
+    p2.drawPoint();
+    
     
     //cout << "press any key to quit" << endl;
     getchar();
