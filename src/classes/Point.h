@@ -10,6 +10,7 @@ public:
     Point();
     /** Constructeur */
     Point(int x, int y);
+    
 
     /** Default destructor */
     virtual ~Point();
