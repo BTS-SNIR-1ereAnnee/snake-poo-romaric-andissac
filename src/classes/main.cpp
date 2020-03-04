@@ -22,6 +22,9 @@ int main()
     p.drawPoint();
     Point p2(10,5);
     p2.drawPoint();
+    p2.setX(8);
+    p2.setY(2);
+    
     //cout << "press any key to quit" << endl;
     getchar();
     fenetre->kill();
