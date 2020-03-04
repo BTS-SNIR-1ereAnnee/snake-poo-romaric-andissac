@@ -12,6 +12,7 @@ public:
 
 private:
     Point serpent[20];
+    int indexSerpent;
     
 };
 #endif
