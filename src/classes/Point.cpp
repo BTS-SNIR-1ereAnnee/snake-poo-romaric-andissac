@@ -1,7 +1,7 @@
 #include "Point.h"
 #include "Board.h"
 #include <iostream>
-
+#include <ncurses.h>
 
 using namespace std;
 
@@ -84,3 +84,4 @@ Point::~Point()
 {
     //dtor
 }
+

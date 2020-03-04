@@ -5,6 +5,7 @@
 #include <iostream>
 #include "Point.h"
 #include "Board.h"
+#include <ncurses.h>
 
 
 using namespace std;
