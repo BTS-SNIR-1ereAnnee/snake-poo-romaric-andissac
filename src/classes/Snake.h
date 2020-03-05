@@ -4,12 +4,15 @@
 #include <ncurses.h>
 #include "Point.h"
 
+class Point;
 class Snake
 {
 public:
     Snake();
+    ~Snake();
     void ajouterPoint(Point p);
     void afficher();
+    
 
 private:
     Point serpent[20];

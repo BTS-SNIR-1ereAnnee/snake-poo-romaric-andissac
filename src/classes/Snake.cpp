@@ -4,7 +4,6 @@
 #include <ncurses.h>
 #include "Snake.h"
 
-
 using namespace std;
 
 Snake::Snake()
@@ -14,16 +13,21 @@ Snake::Snake()
 
 void Snake::afficher()
 {
-
+    for(int i=0; i<indexSerpent; i++)
+    {
+        cout << '*';
+    }
+    cout << endl;
 }
 
 void Snake::ajouterPoint(Point p)
 {
+    this -> serpent[indexSerpent] = p;
+    indexSerpent++;
+}
 
-    for(int i=0;i<20;i++)
-    {
-        serpent[i+1];
-    }
+Snake::~Snake()
+{
 
 }
 
