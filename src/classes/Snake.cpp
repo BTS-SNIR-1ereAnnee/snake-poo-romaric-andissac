@@ -8,12 +8,14 @@ using namespace std;
 
 Snake::Snake()
 {
-    this->indexSerpent = 0;
+    this->m_indexSerpent = 0;
 }
 
+
+//afiche les point 
 void Snake::afficher()
 {
-    for(int i=0; i<indexSerpent; i++)
+    for(int i=0; i<m_indexSerpent; i++)
     {
         cout << '*';
     }
@@ -22,8 +24,8 @@ void Snake::afficher()
 
 void Snake::ajouterPoint(Point p)
 {
-    this -> serpent[indexSerpent] = p;
-    indexSerpent++;
+    this -> m_serpent[m_indexSerpent] = p;
+    this -> m_indexSerpent +1;
 }
 
 Snake::~Snake()

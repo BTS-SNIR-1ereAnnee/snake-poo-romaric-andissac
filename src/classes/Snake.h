@@ -15,8 +15,8 @@ public:
     
 
 private:
-    Point serpent[20];
-    int indexSerpent;
+    Point m_serpent[20];
+    int m_indexSerpent;
     
 };
 #endif
