@@ -8,16 +8,17 @@ class Point;
 class Snake
 {
 public:
-    Snake();
-    ~Snake();
-    void ajouterPoint(Point p);
-    void afficher();
+    Snake(); //constructeur
+    ~Snake(); //desctructeur
+    
+    void ajouterPoint(Point p);     //fonction ajouterPoint
+    void afficher();                //fonction afficher le point
     
     
 
 private:
-    Point m_serpent[20];
-    int m_indexSerpent;
+    Point m_serpent[20];        //methode tableau serpent    
+    int m_indexSerpent;         //methode index serpent
     
 };
 #endif

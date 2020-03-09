@@ -19,10 +19,13 @@ int main()
     // initialisation des pointeurs
     fenetre = Board::getInstance ();
 
+
     /**Point p(10,4);
     p.drawPoint();
     Point p2(10,5);
     p2.drawPoint();
+    
+    //test deplacement serpent
     
     p2.setX(6);
     p2.drawPoint();
@@ -42,13 +45,15 @@ int main()
     p2.drawPoint();
     **/
     
-    Snake serpent;
+    //affiche un point
+    Snake serpent;      
     Point psd(10,4);
     //psd.drawPoint();
     serpent.ajouterPoint( psd );
     serpent.afficher();
     
-    Point psd2(10,5);
+    
+    /**Point psd2(10,5);
     serpent.ajouterPoint( psd2 );
     serpent.afficher();
     
@@ -59,9 +64,11 @@ int main()
     Point psd4(10,7);
     serpent.ajouterPoint( psd4 );
     serpent.afficher();
+    **/
     
-  
-    
+    //deplacement serpent
+    psd.moveLeft();  
+    psd.drawPoint();
     
     //cout << "press any key to quit" << endl;
     

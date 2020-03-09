@@ -6,13 +6,14 @@
 
 using namespace std;
 
+//initialiser l'attribut
 Snake::Snake()
 {
     this->m_indexSerpent = 0;
 }
 
 
-//afiche les point 
+//fonction afiche les point 
 void Snake::afficher()
 {
     for(int i=0;i<20;i++)
@@ -21,9 +22,11 @@ void Snake::afficher()
          }
 }
 
+//fonction ajouter point
+
 void Snake::ajouterPoint(Point p)
 {
-    this->m_serpent[m_indexSerpent+1] = p;
+    this->m_serpent[m_indexSerpent] = p;
 }
 
 Snake::~Snake()
