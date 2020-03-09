@@ -13,6 +13,7 @@ public:
     void ajouterPoint(Point p);
     void afficher();
     
+    
 
 private:
     Point m_serpent[20];

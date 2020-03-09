@@ -6,6 +6,7 @@
 #include "Point.h"
 #include "Board.h"
 #include <ncurses.h>
+#include "Snake.h"
 
 
 using namespace std;
@@ -18,12 +19,12 @@ int main()
     // initialisation des pointeurs
     fenetre = Board::getInstance ();
 
-    Point p(10,4);
+    /**Point p(10,4);
     p.drawPoint();
     Point p2(10,5);
     p2.drawPoint();
     
-    /**p2.setX(6);
+    p2.setX(6);
     p2.drawPoint();
     p2.setY(7);
     p2.drawPoint();
@@ -41,9 +42,15 @@ int main()
     p2.drawPoint();
     **/
     
+    Snake serpent;
+    
+    serpent.afficher();
+   
+  
     
     
     //cout << "press any key to quit" << endl;
+    
     getchar();
     fenetre->kill();
     return 0;
