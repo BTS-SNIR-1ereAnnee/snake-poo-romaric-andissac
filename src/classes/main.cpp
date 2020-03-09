@@ -43,9 +43,12 @@ int main()
     **/
     
     Snake serpent;
+    Point psd(10,4);
+    //psd.drawPoint();
     
     serpent.afficher();
-   
+    serpent.ajouterPoint( psd );
+    
   
     
     

@@ -17,13 +17,13 @@ void Snake::afficher()
 {
     for(int i=0;i<20;i++)
          {
-            m_serpent[i].drawPoint();   
+            m_serpent[i].debug();   
          }
 }
 
 void Snake::ajouterPoint(Point p)
 {
-    this->m_serpent[m_indexSerpent] = p;
+    this->m_serpent[m_indexSerpent+1] = p;
 }
 
 Snake::~Snake()
