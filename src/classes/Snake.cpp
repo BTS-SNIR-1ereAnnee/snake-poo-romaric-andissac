@@ -17,7 +17,7 @@ void Snake::afficher()
 {
     for(int i=0;i<20;i++)
          {
-            m_serpent[i].debug();   
+            m_serpent[i].drawPoint();   
          }
 }
 
