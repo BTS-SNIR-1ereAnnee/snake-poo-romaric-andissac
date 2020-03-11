@@ -29,6 +29,38 @@ void Snake::ajouterPoint(Point p)
     this->m_serpent[m_indexSerpent] = p;
 }
 
+void Snake::moveLeft() 
+{
+     for(int i=0;i<20;i++)
+         {
+            m_serpent[i].moveLeft();
+         }
+}
+
+void Snake::moveRight() 
+{
+     for(int i=0;i<20;i++)
+         {
+            m_serpent[i].moveRight();
+         }
+}
+
+void Snake::moveUp() 
+{
+     for(int i=0;i<20;i++)
+         {
+            m_serpent[i].moveUp();
+         }
+}
+
+void Snake::moveDown() 
+{
+     for(int i=0;i<20;i++)
+         {
+            m_serpent[i].moveDown();
+         }
+}
+
 Snake::~Snake()
 {
 
